@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tCb-hh-RX6">
-                            <size key="itemSize" width="414" height="174"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="40" minimumInteritemSpacing="40" id="tCb-hh-RX6">
+                            <size key="itemSize" width="360" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EMU-AP-CEZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EMU-AP-CEZ" customClass="UserActionCell" customModule="SwiftNetwork" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="40" width="414" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uZf-nL-BFy">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
@@ -45,6 +45,14 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="414" height="174"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="userActionLabel" destination="aZF-eV-9Z4" id="Gey-uD-LBS"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -147,6 +155,12 @@
                     <view key="view" contentMode="scaleToFill" id="BfT-rW-oMa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="B1G-k7-3FM">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="h3X-7g-aBC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>

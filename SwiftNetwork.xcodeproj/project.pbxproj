@@ -13,6 +13,7 @@
 		D7FC2E572640989B0046A3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FC2E562640989B0046A3DB /* Assets.xcassets */; };
 		D7FC2E5A2640989B0046A3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FC2E582640989B0046A3DB /* LaunchScreen.storyboard */; };
 		D7FC2E6926409ED90046A3DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC2E6826409ED90046A3DB /* MainViewController.swift */; };
+		D7FC2E6C2640A1F80046A3DB /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC2E6B2640A1F80046A3DB /* UserActionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D7FC2E592640989B0046A3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7FC2E5B2640989B0046A3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7FC2E6826409ED90046A3DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D7FC2E6B2640A1F80046A3DB /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D7FC2E4D264098990046A3DB /* AppDelegate.swift */,
 				D7FC2E4F264098990046A3DB /* SceneDelegate.swift */,
 				D7FC2E532640989A0046A3DB /* Main.storyboard */,
+				D7FC2E6B2640A1F80046A3DB /* UserActionCell.swift */,
 				D7FC2E562640989B0046A3DB /* Assets.xcassets */,
 				D7FC2E582640989B0046A3DB /* LaunchScreen.storyboard */,
 				D7FC2E5B2640989B0046A3DB /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FC2E6C2640A1F80046A3DB /* UserActionCell.swift in Sources */,
 				D7FC2E6926409ED90046A3DB /* MainViewController.swift in Sources */,
 				D7FC2E4E264098990046A3DB /* AppDelegate.swift in Sources */,
 				D7FC2E50264098990046A3DB /* SceneDelegate.swift in Sources */,
