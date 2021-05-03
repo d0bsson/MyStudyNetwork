@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="4hL-0Q-2cs">
             <objects>
-                <collectionViewController id="zra-j4-i0H" sceneMemberID="viewController">
+                <collectionViewController id="zra-j4-i0H" customClass="MainViewController" customModule="SwiftNetwork" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VMg-H9-e8i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPN-Rp-2rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143" y="-463"/>
+            <point key="canvasLocation" x="2139" y="-374"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sbD-z7-WAm">
