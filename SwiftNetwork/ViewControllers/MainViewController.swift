@@ -30,12 +30,12 @@ class MainViewController: UICollectionViewController {
         
         switch userAction {
         case .friends: performSegue(withIdentifier: "tableViewSegue", sender: nil)
+        
         }
     }
 }
 
 extension MainViewController {
-    
     private func fetchData() {
         guard let url = URL(string: URLExamples.UrlJson.rawValue) else { return }
         
@@ -44,16 +44,18 @@ extension MainViewController {
                 print(error?.localizedDescription ?? "No error description" )
                 return
             }
+            
             do {
-                guard let friend = try? JSONDecoder().decode(Friend.self, from: data) else { return }
+                let friend = try JSONDecoder().decode([Friend].self, from: data)
+                print(friend)
             } catch let error {
-                print(error.localizedDescription ?? "No error in method getchData")
+                print(error.localizedDescription)
             }
         }.resume()
         
     }
 }
-    
+
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
