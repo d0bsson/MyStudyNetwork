@@ -17,22 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="40" minimumInteritemSpacing="40" id="tCb-hh-RX6">
-                            <size key="itemSize" width="360" height="150"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="tCb-hh-RX6">
+                            <size key="itemSize" width="352" height="174"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EMU-AP-CEZ" customClass="UserActionCell" customModule="SwiftNetwork" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="40" width="414" height="174"/>
+                                <rect key="frame" x="31" y="40" width="352" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uZf-nL-BFy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="352" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZF-eV-9Z4">
-                                            <rect key="frame" x="163.5" y="65" width="87" height="44"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="firstJson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZF-eV-9Z4">
+                                            <rect key="frame" x="105.5" y="65" width="141.5" height="44"/>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                         <constraint firstItem="aZF-eV-9Z4" firstAttribute="centerY" secondItem="uZf-nL-BFy" secondAttribute="centerY" id="Ytm-TU-1Eh"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="414" height="174"/>
+                                <size key="customSize" width="352" height="174"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="15"/>
