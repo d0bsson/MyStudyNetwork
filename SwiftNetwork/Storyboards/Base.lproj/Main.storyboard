@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Hello-->
+        <!--Main View Controller-->
         <scene sceneID="4hL-0Q-2cs">
             <objects>
                 <collectionViewController id="zra-j4-i0H" customClass="MainViewController" customModule="SwiftNetwork" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,8 +31,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="352" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="firstJson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZF-eV-9Z4">
-                                            <rect key="frame" x="105.5" y="65" width="141.5" height="44"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZF-eV-9Z4">
+                                            <rect key="frame" x="116.5" y="65" width="119" height="44"/>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="zra-j4-i0H" id="dqp-vZ-rSv"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Hello" id="IqO-aq-7zk"/>
+                    <navigationItem key="navigationItem" id="IqO-aq-7zk"/>
                     <connections>
                         <segue destination="3lQ-vf-6aa" kind="show" identifier="viewSegue" id="7Yb-Qg-UnH"/>
                         <segue destination="jWU-wp-NBE" kind="show" identifier="tableViewSegue" id="JGI-id-Gce"/>

@@ -19,7 +19,7 @@ enum URLExamples: String {
 }
 
 enum UserActions: String, CaseIterable {
-    case getJson = "firstJson"
+    case friends = "friends"
 }
 
 
