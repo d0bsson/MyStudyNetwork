@@ -8,20 +8,20 @@
 import Foundation
 
 class NetworkManager {
-    
+
     let shared = NetworkManager()
-    
-//    init() {}
-    
+
+    init() {}
+
     private func fetchData(from url: String?, with comlition: @escaping ([Friend]) -> Void ) {
         guard let url = URL(string: URLExamples.UrlJson.rawValue) else { return }
-        
+
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description" )
                 return
             }
-            
+
             do {
                 let friend = try JSONDecoder().decode([Friend].self, from: data)
                 print(friend)
@@ -31,4 +31,6 @@ class NetworkManager {
         }.resume()
     }
 }
+
+
 
