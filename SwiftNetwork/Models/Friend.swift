@@ -7,7 +7,7 @@
 
 
 
-struct Friend {
+struct Friend: Decodable {
     let name: String
     let skill: String
     let image: String

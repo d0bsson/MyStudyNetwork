@@ -34,8 +34,31 @@ class MainViewController: UICollectionViewController {
     }
 }
 
+extension MainViewController {
+    
+    private func fetchData() {
+        guard let url = URL(string: URLExamples.UrlJson.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description" )
+                return
+            }
+            do {
+                guard let friend = try? JSONDecoder().decode(Friend.self, from: data) else { return }
+            } catch let error {
+                print(error.localizedDescription ?? "No error in method getchData")
+            }
+        }.resume()
+        
+    }
+}
+    
+
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 24, height: 130)
     }
 }
+
+

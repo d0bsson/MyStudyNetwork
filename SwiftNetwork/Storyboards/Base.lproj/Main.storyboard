@@ -62,7 +62,6 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="IqO-aq-7zk"/>
                     <connections>
-                        <segue destination="3lQ-vf-6aa" kind="show" identifier="viewSegue" id="7Yb-Qg-UnH"/>
                         <segue destination="jWU-wp-NBE" kind="show" identifier="tableViewSegue" id="JGI-id-Gce"/>
                     </connections>
                 </collectionViewController>
@@ -151,29 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXV-eC-EP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139.130434782609" y="513.61607142857144"/>
-        </scene>
-        <!--Hello-->
-        <scene sceneID="KAP-oM-mZZ">
-            <objects>
-                <viewController id="3lQ-vf-6aa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BfT-rW-oMa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="B1G-k7-3FM">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="h3X-7g-aBC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Hello" id="Ogi-YD-e3K"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IPN-Rp-2rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2139" y="-374"/>
+            <point key="canvasLocation" x="2339" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sbD-z7-WAm">
