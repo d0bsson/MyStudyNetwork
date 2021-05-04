@@ -9,14 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Hello-->
         <scene sceneID="4hL-0Q-2cs">
             <objects>
                 <collectionViewController id="zra-j4-i0H" customClass="MainViewController" customModule="SwiftNetwork" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VMg-H9-e8i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.50821109689999999" green="0.28560799320000002" blue="0.15377869899999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="tCb-hh-RX6">
                             <size key="itemSize" width="352" height="174"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="zra-j4-i0H" id="dqp-vZ-rSv"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="IqO-aq-7zk"/>
+                    <navigationItem key="navigationItem" title="Hello" id="IqO-aq-7zk"/>
                     <connections>
                         <segue destination="3lQ-vf-6aa" kind="show" identifier="viewSegue" id="7Yb-Qg-UnH"/>
                         <segue destination="jWU-wp-NBE" kind="show" identifier="tableViewSegue" id="JGI-id-Gce"/>
@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="1372.4637681159422" y="101.78571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Some friends-->
         <scene sceneID="oZT-ZM-bnx">
             <objects>
                 <viewController id="jWU-wp-NBE" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-Mc-X0y">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="138" id="WEW-am-wtI">
@@ -91,6 +91,11 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E4C-at-VyJ">
                                                     <rect key="frame" x="16" y="8" width="226" height="122"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="keM-87-ADI">
                                                     <rect key="frame" x="250" y="11" width="41.5" height="77.5"/>
@@ -142,13 +147,13 @@
                             <constraint firstItem="Eph-Mc-X0y" firstAttribute="trailing" secondItem="zMC-pX-A16" secondAttribute="trailing" id="c7l-QR-On3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vjt-Ef-nBh"/>
+                    <navigationItem key="navigationItem" title="Some friends" id="vjt-Ef-nBh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXV-eC-EP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2139.130434782609" y="513.61607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Hello-->
         <scene sceneID="KAP-oM-mZZ">
             <objects>
                 <viewController id="3lQ-vf-6aa" sceneMemberID="viewController">
@@ -164,7 +169,7 @@
                         <viewLayoutGuide key="safeArea" id="h3X-7g-aBC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ogi-YD-e3K"/>
+                    <navigationItem key="navigationItem" title="Hello" id="Ogi-YD-e3K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPN-Rp-2rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,8 +180,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9b6-73-2ur" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZkW-mV-YdY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZkW-mV-YdY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -18,6 +18,8 @@ enum URLExamples: String {
     case UrlJson = "https://pastebin.com/raw/43sXsbvq"
 }
 
-enum UserAction: String {
+enum UserActions: String, CaseIterable {
     case getJson = "firstJson"
 }
+
+
