@@ -20,7 +20,7 @@ enum URLExamples: String {
 
 enum UserActions: String, CaseIterable {
     case friends = "friends"
-    case friendsInInterface = "friendsInInterface"
+    case friendsInInterface = "Friends with interface"
 }
 
 

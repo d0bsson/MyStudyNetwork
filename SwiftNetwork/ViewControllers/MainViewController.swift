@@ -9,8 +9,6 @@ import UIKit
 
 class MainViewController: UICollectionViewController {
     
-    
-    
     private let userActions = UserActions.allCases
     private var friend: [Friend] = []
     
@@ -20,7 +18,6 @@ class MainViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserActionCell
-        
         cell.userActionLabel.text = userActions[indexPath.item].rawValue
         
         return cell
@@ -30,7 +27,7 @@ class MainViewController: UICollectionViewController {
         let userAction = userActions[indexPath.item]
         
         switch userAction {
-        case .friends: fetchData1(from: URLExamples.UrlJson.rawValue)
+        case .friends: fetchData(from: URLExamples.UrlJson.rawValue)
         case .friendsInInterface: performSegue(withIdentifier: "tableViewSegue", sender: nil)
         }
     }
@@ -38,13 +35,11 @@ class MainViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tableViewSegue" {
             guard let friendsVC = segue.destination as? FriendsViewController else { return }
-            friendsVC.fetch
+            friendsVC.fetchFriends(from: URLExamples.UrlJson.rawValue)
         }
     }
     
-    
-    private func fetchData1(from url: String?) {
-        
+    private func fetchData(from url: String?) {
         NetworkManager.shared.fetchData(from: url) {  friend in
             self.friend = friend
             self.collectionView.reloadData()
@@ -52,31 +47,9 @@ class MainViewController: UICollectionViewController {
     }
 }
 
-
-extension MainViewController {
-    private func fetchData() {
-        guard let url = URL(string: URLExamples.UrlJson.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description" )
-                return
-            }
-            
-            do {
-                let friend = try JSONDecoder().decode([Friend].self, from: data)
-                print(friend)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
-    }
-}
-
-
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width - 24, height: 130)
+        CGSize(width: UIScreen.main.bounds.width - 24, height: 250)
     }
 }
 

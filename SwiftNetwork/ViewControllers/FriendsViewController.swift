@@ -8,6 +8,8 @@
 import UIKit
 
 class FriendsViewController: UITableViewController {
+    
+    private var friend: [Friend] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +91,11 @@ class FriendsViewController: UITableViewController {
 }
 
 extension FriendsViewController {
-    private func fetchFriends() {
+    func fetchFriends(from url: String?) {
+        NetworkManager.shared.fetchData(from: url) { (friend) in
+            self.friend = friend
+            self.tableView.reloadData()
+        }
         
     }
 }
