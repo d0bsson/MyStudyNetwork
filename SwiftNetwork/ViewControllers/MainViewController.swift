@@ -34,7 +34,7 @@ class MainViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tableViewSegue" {
-            guard let friendsVC = segue.destination as? FriendsViewController else { return }
+            guard let friendsVC = segue.destination as? FriendViewController else { return }
             friendsVC.fetchFriends(from: URLExamples.UrlJson.rawValue)
         }
     }
@@ -46,6 +46,7 @@ class MainViewController: UICollectionViewController {
         }
     }
 }
+
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

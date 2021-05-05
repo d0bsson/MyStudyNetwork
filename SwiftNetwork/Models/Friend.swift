@@ -9,7 +9,7 @@
 
 struct Friend: Decodable {
     let name: String
-    let skill: String
+    let skill: String?
     let photo: String
 }
 
