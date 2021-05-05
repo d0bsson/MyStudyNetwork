@@ -9,11 +9,11 @@ import Foundation
 
 class NetworkManager {
 
-    let shared = NetworkManager()
+    static let shared = NetworkManager()
 
     init() {}
 
-    private func fetchData(from url: String?, with comlition: @escaping ([Friend]) -> Void ) {
+    func fetchData(from url: String?, with comlition: @escaping ([Friend]) -> Void ) {
         guard let url = URL(string: URLExamples.UrlJson.rawValue) else { return }
 
         URLSession.shared.dataTask(with: url) { (data, _, error) in

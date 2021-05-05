@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7FA5572264325180094B872 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA5571264325180094B872 /* FriendsViewController.swift */; };
 		D7FC2E4E264098990046A3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC2E4D264098990046A3DB /* AppDelegate.swift */; };
 		D7FC2E50264098990046A3DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC2E4F264098990046A3DB /* SceneDelegate.swift */; };
 		D7FC2E552640989A0046A3DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FC2E532640989A0046A3DB /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7FA5571264325180094B872 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = SwiftNetwork/ViewControllers/FriendsViewController.swift; sourceTree = SOURCE_ROOT; };
 		D7FC2E4A264098990046A3DB /* SwiftNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FC2E4D264098990046A3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FC2E4F264098990046A3DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		D7FC2E6F2641391E0046A3DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D7FA5571264325180094B872 /* FriendsViewController.swift */,
 				D7FC2E6826409ED90046A3DB /* MainViewController.swift */,
 				D7FC2E6B2640A1F80046A3DB /* UserActionCell.swift */,
 			);
@@ -182,6 +185,7 @@
 				D7FC2E6926409ED90046A3DB /* MainViewController.swift in Sources */,
 				D7FC2E7B264146FE0046A3DB /* NetworkManager.swift in Sources */,
 				D7FC2E72264139530046A3DB /* Friend.swift in Sources */,
+				D7FA5572264325180094B872 /* FriendsViewController.swift in Sources */,
 				D7FC2E4E264098990046A3DB /* AppDelegate.swift in Sources */,
 				D7FC2E50264098990046A3DB /* SceneDelegate.swift in Sources */,
 			);
